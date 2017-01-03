@@ -1,0 +1,58 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.group.field_group_email
+    - field.field.group.group.field_group_phone
+    - field.field.group.group.field_group_type
+    - field.field.group.group.field_group_website
+    - group.type.group
+  module:
+    - link
+id: group.group.default
+targetEntityType: group
+bundle: group
+mode: default
+content:
+  field_group_email:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_group_phone:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_group_type:
+    weight: 4
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_group_website:
+    weight: 3
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  label:
+    label: hidden
+    type: string
+    weight: 0
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  uid: true

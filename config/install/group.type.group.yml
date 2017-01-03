@@ -1,0 +1,6 @@
+langcode: en
+status: true
+dependencies: {  }
+id: group
+label: Group
+description: 'Basic group type that can be classified by a group type vocabulary.'

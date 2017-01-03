@@ -1,0 +1,5 @@
+{
+  "require": {
+    "drupal/group": "~1.0-beta4",
+  }
+}

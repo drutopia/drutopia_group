@@ -1,0 +1,16 @@
+name: 'Drutopia Group'
+description: 'Provides a basic group type that can be classified by a group type vocabulary.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - gnode
+  - group
+  - link
+  - node
+  - path
+  - taxonomy
+  - telephone
+  - user
+  - views
+package: Drutopia
