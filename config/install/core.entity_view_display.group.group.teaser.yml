@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.group.teaser
     - field.field.group.group.field_group_description
     - field.field.group.group.field_group_email
     - field.field.group.group.field_group_image
@@ -10,11 +11,11 @@ dependencies:
     - field.field.group.group.field_group_type
     - field.field.group.group.field_group_website
     - group.type.group
+    - image.style.small_square
   module:
     - ds
-    - entity_reference_revisions
     - image
-    - link
+    - text
 third_party_settings:
   ds:
     layout:
@@ -34,73 +35,41 @@ third_party_settings:
           layout_class: {  }
     regions:
       ds_content:
+        - field_group_image
         - label
-        - field_group_description
-        - field_group_phone
-        - field_group_email
-        - field_group_website
-        - field_group_type
-id: group.group.default
+        - field_group_summary
+id: group.group.teaser
 targetEntityType: group
 bundle: group
-mode: default
+mode: teaser
 content:
-  field_group_description:
-    type: entity_reference_revisions_entity_view
-    weight: 1
+  field_group_image:
+    type: image
+    weight: 0
     label: hidden
     settings:
-      view_mode: default
-      link: ''
+      image_style: small_square
+      image_link: content
     third_party_settings: {  }
-  field_group_email:
-    weight: 3
-    label: inline
+  field_group_summary:
+    type: text_default
+    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
-  field_group_image:
-    weight: 6
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-  field_group_phone:
-    weight: 2
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-  field_group_type:
-    weight: 5
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-  field_group_website:
-    weight: 4
-    label: inline
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
   label:
     label: hidden
     type: string
-    weight: 0
+    weight: 1
     settings:
       link_to_entity: true
     third_party_settings: {  }
 hidden:
   changed: true
   created: true
-  field_group_summary: true
+  field_group_description: true
+  field_group_email: true
+  field_group_phone: true
+  field_group_type: true
+  field_group_website: true
   uid: true

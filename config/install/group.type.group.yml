@@ -4,3 +4,4 @@ dependencies: {  }
 id: group
 label: Group
 description: 'Basic group type that can be classified by a group type vocabulary.'
+creator_roles: {  }
