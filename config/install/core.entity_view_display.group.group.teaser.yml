@@ -51,12 +51,14 @@ content:
       image_style: small_square
       image_link: content
     third_party_settings: {  }
+    region: ds_content
   field_group_summary:
     type: text_default
     weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    region: ds_content
   label:
     label: hidden
     type: string
@@ -64,6 +66,7 @@ content:
     settings:
       link_to_entity: true
     third_party_settings: {  }
+    region: ds_content
 hidden:
   changed: true
   created: true

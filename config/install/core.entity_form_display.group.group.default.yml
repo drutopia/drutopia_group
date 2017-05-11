@@ -32,8 +32,9 @@ content:
       edit_mode: open
       add_mode: button
       form_display_mode: default
-      default_paragraph_type: paragraphs_base_text
+      default_paragraph_type: text
     third_party_settings: {  }
+    region: content
   field_group_email:
     weight: 6
     settings:
@@ -41,6 +42,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: email_default
+    region: content
   field_group_image:
     weight: 2
     settings:
@@ -48,12 +50,14 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
   field_group_phone:
     weight: 5
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
+    region: content
   field_group_summary:
     weight: 3
     settings:
@@ -61,11 +65,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
   field_group_type:
     weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
   field_group_website:
     weight: 7
     settings:
@@ -73,6 +79,7 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
   label:
     type: string_textfield
     weight: 0
@@ -80,10 +87,12 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 8
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   uid: true
