@@ -1,0 +1,6 @@
+path:
+  - permissions
+plugin: add
+actions:
+  'create group group':
+    value: 'create group group'
