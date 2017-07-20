@@ -1,3 +1,7 @@
 bundle: drutopia
 excluded:
-  - group.content_type.group-group_node-article
+  - group.role.group-a416e6833
+  - group.role.group-0b0baeca9
+  - group.role.group-443ed8e03
+  - group.role.group-ec70061de
+required: true
