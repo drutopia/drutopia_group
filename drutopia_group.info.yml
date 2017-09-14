@@ -20,6 +20,7 @@ dependencies:
   - paragraphs
   - path
   - pathauto
+  - responsive_image
   - taxonomy
   - telephone
   - text
