@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.group.teaser
+    - field.field.group.group.field_group_address
     - field.field.group.group.field_group_description
     - field.field.group.group.field_group_email
     - field.field.group.group.field_group_image
@@ -11,22 +12,22 @@ dependencies:
     - field.field.group.group.field_group_type
     - field.field.group.group.field_group_website
     - group.type.group
-    - image.style.small_square
+    - responsive_image.styles.narrow
   module:
     - ds
-    - image
+    - responsive_image
     - text
 third_party_settings:
   ds:
     layout:
-      id: ds_1col
-      path: modules/contrib/ds
-      library: ''
-      disable_css: false
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: true
       entity_classes: all_classes
       settings:
         wrappers:
-          ds_content: div
+          left: div
+          right: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
@@ -34,8 +35,9 @@ third_party_settings:
         classes:
           layout_class: {  }
     regions:
-      ds_content:
+      left:
         - field_group_image
+      right:
         - label
         - field_group_summary
 id: group.group.teaser
@@ -44,32 +46,33 @@ bundle: group
 mode: teaser
 content:
   field_group_image:
-    type: image
+    type: responsive_image
     weight: 0
-    label: hidden
+    label: visually_hidden
     settings:
-      image_style: small_square
+      responsive_image_style: narrow
       image_link: content
     third_party_settings: {  }
-    region: ds_content
+    region: left
   field_group_summary:
     type: text_default
     weight: 2
-    label: hidden
+    label: visually_hidden
     settings: {  }
     third_party_settings: {  }
-    region: ds_content
+    region: right
   label:
-    label: hidden
+    label: visually_hidden
     type: string
     weight: 1
     settings:
       link_to_entity: true
     third_party_settings: {  }
-    region: ds_content
+    region: right
 hidden:
   changed: true
   created: true
+  field_group_address: true
   field_group_description: true
   field_group_email: true
   field_group_phone: true
