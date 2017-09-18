@@ -71,6 +71,10 @@ display:
             next: ››
       style:
         type: default
+        options:
+          row_class: ''
+          default_row_class: false
+          uses_fields: false
       row:
         type: 'ds_entity:group'
         options:
