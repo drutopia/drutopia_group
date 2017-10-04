@@ -78,8 +78,7 @@
                     {
                         "value": "837c00a0-c9a7-4ae7-9e60-4937cd0a9fcc"
                     }
-                ],
-                "target_revision_id": "389"
+                ]
             }
         ],
         "http:\/\/drupal.org\/rest\/relation\/group\/group\/field_group_image": [
