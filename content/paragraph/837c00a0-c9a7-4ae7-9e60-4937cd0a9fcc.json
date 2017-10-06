@@ -109,13 +109,6 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| Drutopia Almost"
-            }
-        }
-    ],
     "field_text": [
         {
             "value": "<p>Drutopia Group is built upon the <a href=\"https:\/\/www.drupal.org\/project\/group\">Drupal Group module<\/a>. It provides the basic functionality that allows site users to be part of groups and for content to be associated with groups, providing almost mini-sites within a website.<\/p>\r\n\r\n<p>As with other Drutopia base features, Drutopia Group provides the basics and further linkages can be configured by the site administrator. More fully developed group linkages will be a key focus of the Solidarity distribution.<\/p>\r\n\r\n<p>As with other Drutopia features, the paragraph module allows you to add a variety of paragraph types so that you can easily add text, images or files.<\/p>\r\n\r\n<p>Fields are available for you to add group contact information such as a phone, email and address.<\/p>\r\n",

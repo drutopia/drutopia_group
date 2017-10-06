@@ -121,13 +121,6 @@
             "lang": "en"
         }
     ],
-    "metatag": [
-        {
-            "value": {
-                "title": "| Drutopia Almost"
-            }
-        }
-    ],
     "field_group_email": [
         {
             "value": "admin@example.com"
